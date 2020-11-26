@@ -1,4 +1,4 @@
-# Angular Login UI
+# Angular Login UI (with reactive forms)
 
 This project has four fields in a reactive form (Email, First Name, Last Name, Birth Year).
 The sign up button navigates to a success component. The button is disabled if the year that is entered in the year field is after the year 2000, or if any of the fields are empty.
