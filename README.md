@@ -2,9 +2,11 @@
 
 This project has four fields in a reactive form (Email, First Name, Last Name, Birth Year).
 The sign up button navigates to a success component. The button is disabled if the year that is entered in the year field is after the year 2000, or if any of the fields are empty.
+
 ![1](https://user-images.githubusercontent.com/62124046/100305343-c6dc8b00-2f55-11eb-845d-c009131d0964.png)
 
 After the user submits the form (with valid form inputs), they are taken to a success component. Form data is passed to this component using query parameters. A custom pipe is also implemented in order to turn the values to uppercase.
+
 ![2](https://user-images.githubusercontent.com/62124046/100305345-c80db800-2f55-11eb-9b95-84ae14306712.png)
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.1.7.
