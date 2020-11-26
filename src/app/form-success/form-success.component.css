@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@600&display=swap');
+div.container {
+  margin-top: 150px;
+  background-color: #dccec0;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  border-radius: 60px;
+}
+
+h1 {
+  font-size: 20px;
+  font-family: 'Quicksand', sans-serif;
+  padding-bottom: 20px;
+}
+p {
+  line-height: 70%;
+}

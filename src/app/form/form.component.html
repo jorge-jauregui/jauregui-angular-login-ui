@@ -1,0 +1,43 @@
+
+<div class="container">
+  <div class="row justify-content-center">
+    <svg class="logo" width="2em" viewBox="0 0 16 16" class="bi bi-bag" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+      <path fill-rule="evenodd" d="M14 5H2v9a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1V5zM1 4v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4H1z"/>
+      <path d="M8 1.5A2.5 2.5 0 0 0 5.5 4h-1a3.5 3.5 0 1 1 7 0h-1A2.5 2.5 0 0 0 8 1.5z"/>
+    </svg>
+  </div>
+  <div class="row justify-content-center">
+
+    <form [formGroup]="registerForm" class="register-form" autocomplete="off">
+
+      <div class="form-group">
+        <label for="exampleInputEmail1">Email</label>
+        <input formControlName="email" type="email" class="form-control shadow-none" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Your email">
+      </div>
+
+      <div class="form-group">
+        <label for="exampleInputEmail1">First Name</label>
+        <input formControlName="firstName" type="email" class="form-control shadow-none" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Your first name">
+      </div>
+
+      <div class="form-group">
+        <label for="exampleInputEmail1">Last Name</label>
+        <input formControlName="lastName" type="email" class="form-control shadow-none" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Your last name">
+      </div>
+
+      <div class="form-group">
+        <label for="exampleInputEmail1">Birth Year</label>
+        <input formControlName="birthYear" type="email" class="form-control shadow-none" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Your year of birth">
+        <small *ngIf="registerForm.value.birthYear > 2000" style="color:red;" id="yearHelp" class="year-warning">You must be born before the year 2001.</small>
+      </div>
+
+      <button
+        [disabled]="!registerForm.valid"
+        (click)="onSubmitForm()"
+        type="submit"
+        class="btn btn-outline-info mx-auto">Submit
+      </button>
+    </form>
+  </div>
+</div>
+

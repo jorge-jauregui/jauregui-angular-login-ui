@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap');
+
+div.container {
+  align-items: center; /* vertical center */
+  justify-content: center; /* horizontal center */
+  height: 100vh;
+  padding-top: 150px;
+}
+form.register-form {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  min-width: 400px;
+  min-height: 500px;
+  padding: 50px 50px 100px 50px;
+}
+
+input {
+  height: 30px;
+  background-color: transparent;
+  border: none;
+  border-bottom: solid 1px black;
+  color: gray;
+}
+input:focus {
+  outline: none;
+  background-color: transparent;
+}
+.btn {
+  margin-top: 20px;
+  border: solid 1px black;
+  color: black;
+}
+
+.btn:hover {
+  background-color: #202020;
+  border: solid 1px black;
+  color: white;
+}
