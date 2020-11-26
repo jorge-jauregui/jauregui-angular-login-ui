@@ -1,4 +1,4 @@
-import { Component, OnInit, Output } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { NavigationExtras, Router } from '@angular/router';
 
@@ -27,7 +27,6 @@ export class FormComponent implements OnInit {
 
   // This method turns the form values into query params and ships these to form-success component
   onSubmitForm() {
-    console.log(this.registerForm.value);
     let navigationExtras: NavigationExtras = {
       queryParams: {
         email: this.registerForm.value.email,

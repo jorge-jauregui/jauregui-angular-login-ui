@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 
-import { Router, ActivatedRoute, ParamMap } from '@angular/router';
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-form-success',
@@ -10,11 +10,10 @@ import { Router, ActivatedRoute, ParamMap } from '@angular/router';
 export class FormSuccessComponent implements OnInit {
   formData;
 
+  // This constructor subscribes to the form values/query params that are shipped from form component
   constructor(private route: ActivatedRoute) {
     this.route.queryParams.subscribe(params => {
       this.formData = params;
-      console.log('This is from success component:')
-      console.log(params);
     });
   }
 
